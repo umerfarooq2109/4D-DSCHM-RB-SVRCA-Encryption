@@ -287,10 +287,6 @@ To prove the cryptosystem's security foundation, the chaotic map was subjected t
 ### 1. Attractor Phase Portrait
 A strange attractor with fractional dimension is a key signature of chaos. The 2D projection and 3D phase space plots show highly dense trajectories confirming broad chaotic coverage:
 
-| 2D Phase Portrait ($x$-$y$) | 3D Phase Portrait ($x$-$y$-$z$) |
-| :---: | :---: |
-| ![2D Attractor](results/plots/strange_attractor_2d_xy.png) | ![3D Attractor](results/plots/strange_attractor_3d.png) |
-
 ### 2. Lyapunov Exponents
 Lyapunov exponents measure the rate of separation of infinitesimally close trajectories. Positive Lyapunov exponents ($\lambda > 0$) signify chaos, while two or more positive exponents indicate hyperchaos:
 
