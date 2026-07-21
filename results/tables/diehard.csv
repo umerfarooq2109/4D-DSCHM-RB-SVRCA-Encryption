@@ -1,0 +1,86 @@
+Sequence,Test,P-value,Result
+enc_1024.png,Birthday spacing,0.593994,Success
+enc_1024.png,Overlapping permutation,0.000001,Failure
+enc_1024.png,Binary rank 31 x 31,0.854046,Success
+enc_1024.png,Binary rank 6 x 8,0.835070,Success
+enc_1024.png,Bitstream,0.970829,Success
+enc_1024.png,OPSO,0.927285,Success
+enc_1024.png,OQSO,0.003154,Success
+enc_1024.png,DNA,0.003154,Success
+enc_1024.png,Count the ones 01,0.506737,Success
+enc_1024.png,Count the ones 02,0.417504,Success
+enc_1024.png,Parking lot,0.255999,Success
+enc_1024.png,Minimum distance,0.526529,Success
+enc_1024.png,3DS spheres,0.750216,Success
+enc_1024.png,Squeeze,0.089171,Success
+enc_1024.png,Overlapping sum,0.279747,Success
+enc_1024.png,Runs,0.946507,Success
+enc_1024.png,CrapsRa,0.284255,Success
+enc_1024.png,Birthday spacing,0.593994,Success
+enc_1024.png,Overlapping permutation,0.892701,Success
+enc_1024.png,Binary rank 31 x 31,0.854046,Success
+enc_1024.png,Binary rank 6 x 8,0.835070,Success
+enc_1024.png,Bitstream,0.970829,Success
+enc_1024.png,OPSO,0.927285,Success
+enc_1024.png,OQSO,0.003154,Success
+enc_1024.png,DNA,0.003154,Success
+enc_1024.png,Count the ones 01,0.506737,Success
+enc_1024.png,Count the ones 02,0.417504,Success
+enc_1024.png,Parking lot,0.283138,Success
+enc_1024.png,Minimum distance,0.526529,Success
+enc_1024.png,3DS spheres,0.750216,Success
+enc_1024.png,Squeeze,0.121412,Success
+enc_1024.png,Overlapping sum,0.279747,Success
+enc_1024.png,Runs,0.946507,Success
+enc_1024.png,CrapsRa,0.284255,Success
+enc_1024.png,Birthday spacing,0.593994,Success
+enc_1024.png,Overlapping permutation,0.892701,Success
+enc_1024.png,Binary rank 31 x 31,0.854046,Success
+enc_1024.png,Binary rank 6 x 8,0.835070,Success
+enc_1024.png,Bitstream,0.970829,Success
+enc_1024.png,OPSO,0.927285,Success
+enc_1024.png,OQSO,0.003154,Success
+enc_1024.png,DNA,0.003154,Success
+enc_1024.png,Count the ones 01,0.506737,Success
+enc_1024.png,Count the ones 02,0.417504,Success
+enc_1024.png,Parking lot,0.335011,Success
+enc_1024.png,Minimum distance,0.526529,Success
+enc_1024.png,3DS spheres,0.750216,Success
+enc_1024.png,Squeeze,0.186245,Success
+enc_1024.png,Overlapping sum,0.279747,Success
+enc_1024.png,Runs,0.946507,Success
+enc_1024.png,CrapsRa,0.284255,Success
+lena_color_512.tif,Birthday spacing,0.000000,Failure
+lena_color_512.tif,Overlapping permutation,0.000000,Failure
+lena_color_512.tif,Binary rank 31 x 31,0.514383,Success
+lena_color_512.tif,Binary rank 6 x 8,0.000000,Failure
+lena_color_512.tif,Bitstream,0.000000,Failure
+lena_color_512.tif,OPSO,0.000000,Failure
+lena_color_512.tif,OQSO,0.000000,Failure
+lena_color_512.tif,DNA,0.000000,Failure
+lena_color_512.tif,Count the ones 01,0.000000,Failure
+lena_color_512.tif,Count the ones 02,0.000000,Failure
+lena_color_512.tif,Parking lot,0.188502,Success
+lena_color_512.tif,Minimum distance,0.000000,Failure
+lena_color_512.tif,3DS spheres,0.000000,Failure
+lena_color_512.tif,Squeeze,0.167082,Success
+lena_color_512.tif,Overlapping sum,0.371261,Success
+lena_color_512.tif,Runs,0.523868,Success
+lena_color_512.tif,CrapsRa,0.483776,Success
+enc_lenna.png,Birthday spacing,0.593994,Success
+enc_lenna.png,Overlapping permutation,0.430599,Success
+enc_lenna.png,Binary rank 31 x 31,0.076361,Success
+enc_lenna.png,Binary rank 6 x 8,0.142043,Success
+enc_lenna.png,Bitstream,0.110258,Success
+enc_lenna.png,OPSO,0.278979,Success
+enc_lenna.png,OQSO,0.127191,Success
+enc_lenna.png,DNA,0.127191,Success
+enc_lenna.png,Count the ones 01,0.294471,Success
+enc_lenna.png,Count the ones 02,0.453312,Success
+enc_lenna.png,Parking lot,0.963050,Success
+enc_lenna.png,Minimum distance,0.147476,Success
+enc_lenna.png,3DS spheres,0.959313,Success
+enc_lenna.png,Squeeze,0.266121,Success
+enc_lenna.png,Overlapping sum,0.353584,Success
+enc_lenna.png,Runs,0.024598,Success
+enc_lenna.png,CrapsRa,0.408381,Success

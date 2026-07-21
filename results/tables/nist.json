@@ -1,0 +1,327 @@
+[
+    {
+        "sequence": "enc_lenna.png",
+        "tests": {
+            "Frequency": {
+                "p_value": 0.9164066260107896,
+                "pass": true
+            },
+            "Block Frequency": {
+                "p_value": 0.8959756636029715,
+                "pass": true
+            },
+            "Cumulative Sums": {
+                "p_value": 0.9275749411040586,
+                "pass": true
+            },
+            "Runs": {
+                "p_value": 0.7654602518747553,
+                "pass": true
+            },
+            "Longest Runs of Ones": {
+                "p_value": 0.9315057180899812,
+                "pass": true
+            },
+            "Rank": {
+                "p_value": 0.04769804109247264,
+                "pass": true
+            },
+            "Spectral DFT": {
+                "p_value": 0.6536887635141336,
+                "pass": true
+            },
+            "Nonperiodic Template Matchings": {
+                "p_value": 0.995911574593287,
+                "pass": true
+            },
+            "Overlapping Template Matchings": {
+                "p_value": 0.6444999448707329,
+                "pass": true
+            },
+            "Universal Statistical": {
+                "p_value": 0.21889114719621172,
+                "pass": true
+            },
+            "Approximate Entropy": {
+                "p_value": 0.1456280742704119,
+                "pass": true
+            },
+            "Random Excursions": {
+                "p_value": 0.02438974496091946,
+                "pass": true
+            },
+            "Random Excursions Variant": {
+                "p_value": 0.435207627430909,
+                "pass": true
+            },
+            "Serial": {
+                "p_value": 0.7654660588177704,
+                "pass": true
+            },
+            "Linear Complexity": {
+                "p_value": 0.001020255943311949,
+                "pass": false
+            }
+        }
+    },
+    {
+        "sequence": "enc_Baboon.png",
+        "tests": {
+            "Frequency": {
+                "p_value": 0.9977961372416233,
+                "pass": true
+            },
+            "Block Frequency": {
+                "p_value": 0.09324518606690765,
+                "pass": true
+            },
+            "Cumulative Sums": {
+                "p_value": 0.8082757800425677,
+                "pass": true
+            },
+            "Runs": {
+                "p_value": 0.32273916256575863,
+                "pass": true
+            },
+            "Longest Runs of Ones": {
+                "p_value": 0.0031024402728065973,
+                "pass": false
+            },
+            "Rank": {
+                "p_value": 0.07469744802731232,
+                "pass": true
+            },
+            "Spectral DFT": {
+                "p_value": 0.990899371504637,
+                "pass": true
+            },
+            "Nonperiodic Template Matchings": {
+                "p_value": 0.25463031071417763,
+                "pass": true
+            },
+            "Overlapping Template Matchings": {
+                "p_value": 0.21892363594774322,
+                "pass": true
+            },
+            "Universal Statistical": {
+                "p_value": 0.2372934343579004,
+                "pass": true
+            },
+            "Approximate Entropy": {
+                "p_value": 0.6642311861643111,
+                "pass": true
+            },
+            "Random Excursions": {
+                "p_value": 0.2568476971465924,
+                "pass": true
+            },
+            "Random Excursions Variant": {
+                "p_value": 0.07321366694428616,
+                "pass": true
+            },
+            "Serial": {
+                "p_value": 0.32273915998950004,
+                "pass": true
+            },
+            "Linear Complexity": {
+                "p_value": 0.22099725001322731,
+                "pass": true
+            }
+        }
+    },
+    {
+        "sequence": "enc_Baboon.png",
+        "tests": {
+            "Frequency": {
+                "p_value": 0.6426199293929437,
+                "pass": true
+            },
+            "Block Frequency": {
+                "p_value": 0.5581361182332515,
+                "pass": true
+            },
+            "Cumulative Sums": {
+                "p_value": 0.7888406813156277,
+                "pass": true
+            },
+            "Runs": {
+                "p_value": 0.16687946856400393,
+                "pass": true
+            },
+            "Longest Runs of Ones": {
+                "p_value": 0.10205239251335001,
+                "pass": true
+            },
+            "Rank": {
+                "p_value": 0.17428509049680757,
+                "pass": true
+            },
+            "Spectral DFT": {
+                "p_value": 0.32351057278305506,
+                "pass": true
+            },
+            "Nonperiodic Template Matchings": {
+                "p_value": 0.7734585542983378,
+                "pass": true
+            },
+            "Overlapping Template Matchings": {
+                "p_value": 0.7132162821217337,
+                "pass": true
+            },
+            "Universal Statistical": {
+                "p_value": 0.26987629723301765,
+                "pass": true
+            },
+            "Approximate Entropy": {
+                "p_value": 0.65127893183686,
+                "pass": true
+            },
+            "Random Excursions": {
+                "p_value": 0.06941856416573933,
+                "pass": true
+            },
+            "Random Excursions Variant": {
+                "p_value": 0.20517591293295423,
+                "pass": true
+            },
+            "Serial": {
+                "p_value": 0.16641049394331597,
+                "pass": true
+            },
+            "Linear Complexity": {
+                "p_value": 0.023890320546730112,
+                "pass": true
+            }
+        }
+    },
+    {
+        "sequence": "enc_lenna.png",
+        "tests": {
+            "Frequency": {
+                "p_value": 0.304828674075447,
+                "pass": true
+            },
+            "Block Frequency": {
+                "p_value": 0.35081633118889927,
+                "pass": true
+            },
+            "Cumulative Sums": {
+                "p_value": 0.3053433375659283,
+                "pass": true
+            },
+            "Runs": {
+                "p_value": 0.6984947561965968,
+                "pass": true
+            },
+            "Longest Runs of Ones": {
+                "p_value": 0.6104808146822116,
+                "pass": true
+            },
+            "Rank": {
+                "p_value": 0.2316496067669123,
+                "pass": true
+            },
+            "Spectral DFT": {
+                "p_value": 0.39863681044503674,
+                "pass": true
+            },
+            "Nonperiodic Template Matchings": {
+                "p_value": 0.5046875126794336,
+                "pass": true
+            },
+            "Overlapping Template Matchings": {
+                "p_value": 0.7163904512335892,
+                "pass": true
+            },
+            "Universal Statistical": {
+                "p_value": 0.7526647145525108,
+                "pass": true
+            },
+            "Approximate Entropy": {
+                "p_value": 0.7753386140387792,
+                "pass": true
+            },
+            "Random Excursions": {
+                "p_value": 0.19964401679851088,
+                "pass": true
+            },
+            "Random Excursions Variant": {
+                "p_value": 0.012358372825923641,
+                "pass": true
+            },
+            "Serial": {
+                "p_value": 0.5475426345299872,
+                "pass": true
+            },
+            "Linear Complexity": {
+                "p_value": 0.03442233057605335,
+                "pass": true
+            }
+        }
+    },
+    {
+        "sequence": "enc_lenna.png",
+        "tests": {
+            "Frequency": {
+                "p_value": 0.304828674075447,
+                "pass": true
+            },
+            "Block Frequency": {
+                "p_value": 0.35081633118889927,
+                "pass": true
+            },
+            "Cumulative Sums": {
+                "p_value": 0.3053433375659283,
+                "pass": true
+            },
+            "Runs": {
+                "p_value": 0.6984947561965968,
+                "pass": true
+            },
+            "Longest Runs of Ones": {
+                "p_value": 0.6104808146822116,
+                "pass": true
+            },
+            "Rank": {
+                "p_value": 0.2316496067669123,
+                "pass": true
+            },
+            "Spectral DFT": {
+                "p_value": 0.39863681044503674,
+                "pass": true
+            },
+            "Nonperiodic Template Matchings": {
+                "p_value": 0.5046875126794336,
+                "pass": true
+            },
+            "Overlapping Template Matchings": {
+                "p_value": 0.7163904512335892,
+                "pass": true
+            },
+            "Universal Statistical": {
+                "p_value": 0.7526647145525108,
+                "pass": true
+            },
+            "Approximate Entropy": {
+                "p_value": 0.7753386140387792,
+                "pass": true
+            },
+            "Random Excursions": {
+                "p_value": 0.19964401679851088,
+                "pass": true
+            },
+            "Random Excursions Variant": {
+                "p_value": 0.012358372825923641,
+                "pass": true
+            },
+            "Serial": {
+                "p_value": 0.5475426345299872,
+                "pass": true
+            },
+            "Linear Complexity": {
+                "p_value": 0.03442233057605335,
+                "pass": true
+            }
+        }
+    }
+]
