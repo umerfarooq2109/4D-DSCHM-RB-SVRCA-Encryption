@@ -1,292 +1,73 @@
 [
     {
-        "sequence": "enc_1024.png",
+        "sequence": "enc_lenna.png",
         "tests": {
             "Birthday spacing": {
-                "p_value": 0.5939941502901619,
+                "p_value": 0.3233235838169365,
                 "result": "Success"
             },
             "Overlapping permutation": {
-                "p_value": 1.438087382209833e-06,
-                "result": "Failure"
-            },
-            "Binary rank 31 x 31": {
-                "p_value": 0.8540460882362992,
-                "result": "Success"
-            },
-            "Binary rank 6 x 8": {
-                "p_value": 0.8350700463111159,
-                "result": "Success"
-            },
-            "Bitstream": {
-                "p_value": 0.9708285555999449,
-                "result": "Success"
-            },
-            "OPSO": {
-                "p_value": 0.9272849188327373,
-                "result": "Success"
-            },
-            "OQSO": {
-                "p_value": 0.0031537571478079847,
-                "result": "Success"
-            },
-            "DNA": {
-                "p_value": 0.0031537571478079847,
-                "result": "Success"
-            },
-            "Count the ones 01": {
-                "p_value": 0.5067370932271655,
-                "result": "Success"
-            },
-            "Count the ones 02": {
-                "p_value": 0.41750398206441425,
-                "result": "Success"
-            },
-            "Parking lot": {
-                "p_value": 0.2559990306055926,
-                "result": "Success"
-            },
-            "Minimum distance": {
-                "p_value": 0.5265293661712154,
-                "result": "Success"
-            },
-            "3DS spheres": {
-                "p_value": 0.7502156569170767,
-                "result": "Success"
-            },
-            "Squeeze": {
-                "p_value": 0.08917147501130648,
-                "result": "Success"
-            },
-            "Overlapping sum": {
-                "p_value": 0.2797473847491184,
-                "result": "Success"
-            },
-            "Runs": {
-                "p_value": 0.9465067102259545,
-                "result": "Success"
-            },
-            "CrapsRa": {
-                "p_value": 0.2842550620753944,
-                "result": "Success"
-            }
-        }
-    },
-    {
-        "sequence": "enc_1024.png",
-        "tests": {
-            "Birthday spacing": {
-                "p_value": 0.5939941502901619,
-                "result": "Success"
-            },
-            "Overlapping permutation": {
-                "p_value": 0.8927012595332026,
+                "p_value": 0.4900606626131161,
                 "result": "Success"
             },
             "Binary rank 31 x 31": {
-                "p_value": 0.8540460882362992,
+                "p_value": 0.604541147291733,
                 "result": "Success"
             },
             "Binary rank 6 x 8": {
-                "p_value": 0.8350700463111159,
+                "p_value": 0.613318767393187,
                 "result": "Success"
             },
             "Bitstream": {
-                "p_value": 0.9708285555999449,
+                "p_value": 0.9921768939852703,
                 "result": "Success"
             },
             "OPSO": {
-                "p_value": 0.9272849188327373,
+                "p_value": 0.02975300756006479,
                 "result": "Success"
             },
             "OQSO": {
-                "p_value": 0.0031537571478079847,
+                "p_value": 0.6552908707446063,
                 "result": "Success"
             },
             "DNA": {
-                "p_value": 0.0031537571478079847,
+                "p_value": 0.6552908707446063,
                 "result": "Success"
             },
             "Count the ones 01": {
-                "p_value": 0.5067370932271655,
+                "p_value": 0.9312746646929616,
                 "result": "Success"
             },
             "Count the ones 02": {
-                "p_value": 0.41750398206441425,
+                "p_value": 0.6518307581132115,
                 "result": "Success"
             },
             "Parking lot": {
-                "p_value": 0.2831378661051449,
+                "p_value": 0.4715776205363117,
                 "result": "Success"
             },
             "Minimum distance": {
-                "p_value": 0.5265293661712154,
+                "p_value": 0.6308836438805792,
                 "result": "Success"
             },
             "3DS spheres": {
-                "p_value": 0.7502156569170767,
+                "p_value": 0.25918063697044824,
                 "result": "Success"
             },
             "Squeeze": {
-                "p_value": 0.12141165403527891,
+                "p_value": 0.7559172161176866,
                 "result": "Success"
             },
             "Overlapping sum": {
-                "p_value": 0.2797473847491184,
+                "p_value": 0.2044222099517974,
                 "result": "Success"
             },
             "Runs": {
-                "p_value": 0.9465067102259545,
+                "p_value": 0.7121142284555673,
                 "result": "Success"
             },
             "CrapsRa": {
-                "p_value": 0.2842550620753944,
-                "result": "Success"
-            }
-        }
-    },
-    {
-        "sequence": "enc_1024.png",
-        "tests": {
-            "Birthday spacing": {
-                "p_value": 0.5939941502901619,
-                "result": "Success"
-            },
-            "Overlapping permutation": {
-                "p_value": 0.8927012595332026,
-                "result": "Success"
-            },
-            "Binary rank 31 x 31": {
-                "p_value": 0.8540460882362992,
-                "result": "Success"
-            },
-            "Binary rank 6 x 8": {
-                "p_value": 0.8350700463111159,
-                "result": "Success"
-            },
-            "Bitstream": {
-                "p_value": 0.9708285555999449,
-                "result": "Success"
-            },
-            "OPSO": {
-                "p_value": 0.9272849188327373,
-                "result": "Success"
-            },
-            "OQSO": {
-                "p_value": 0.0031537571478079847,
-                "result": "Success"
-            },
-            "DNA": {
-                "p_value": 0.0031537571478079847,
-                "result": "Success"
-            },
-            "Count the ones 01": {
-                "p_value": 0.5067370932271655,
-                "result": "Success"
-            },
-            "Count the ones 02": {
-                "p_value": 0.41750398206441425,
-                "result": "Success"
-            },
-            "Parking lot": {
-                "p_value": 0.33501079694778324,
-                "result": "Success"
-            },
-            "Minimum distance": {
-                "p_value": 0.5265293661712154,
-                "result": "Success"
-            },
-            "3DS spheres": {
-                "p_value": 0.7502156569170767,
-                "result": "Success"
-            },
-            "Squeeze": {
-                "p_value": 0.18624481176305246,
-                "result": "Success"
-            },
-            "Overlapping sum": {
-                "p_value": 0.2797473847491184,
-                "result": "Success"
-            },
-            "Runs": {
-                "p_value": 0.9465067102259545,
-                "result": "Success"
-            },
-            "CrapsRa": {
-                "p_value": 0.2842550620753944,
-                "result": "Success"
-            }
-        }
-    },
-    {
-        "sequence": "lena_color_512.tif",
-        "tests": {
-            "Birthday spacing": {
-                "p_value": 0.0,
-                "result": "Failure"
-            },
-            "Overlapping permutation": {
-                "p_value": 0.0,
-                "result": "Failure"
-            },
-            "Binary rank 31 x 31": {
-                "p_value": 0.5143831985226164,
-                "result": "Success"
-            },
-            "Binary rank 6 x 8": {
-                "p_value": 0.0,
-                "result": "Failure"
-            },
-            "Bitstream": {
-                "p_value": 0.0,
-                "result": "Failure"
-            },
-            "OPSO": {
-                "p_value": 0.0,
-                "result": "Failure"
-            },
-            "OQSO": {
-                "p_value": 0.0,
-                "result": "Failure"
-            },
-            "DNA": {
-                "p_value": 0.0,
-                "result": "Failure"
-            },
-            "Count the ones 01": {
-                "p_value": 0.0,
-                "result": "Failure"
-            },
-            "Count the ones 02": {
-                "p_value": 0.0,
-                "result": "Failure"
-            },
-            "Parking lot": {
-                "p_value": 0.18850186595228002,
-                "result": "Success"
-            },
-            "Minimum distance": {
-                "p_value": 0.0,
-                "result": "Failure"
-            },
-            "3DS spheres": {
-                "p_value": 0.0,
-                "result": "Failure"
-            },
-            "Squeeze": {
-                "p_value": 0.167081808174264,
-                "result": "Success"
-            },
-            "Overlapping sum": {
-                "p_value": 0.3712610087764095,
-                "result": "Success"
-            },
-            "Runs": {
-                "p_value": 0.5238676417922008,
-                "result": "Success"
-            },
-            "CrapsRa": {
-                "p_value": 0.48377555338971456,
+                "p_value": 0.3093902033013891,
                 "result": "Success"
             }
         }
@@ -295,71 +76,144 @@
         "sequence": "enc_lenna.png",
         "tests": {
             "Birthday spacing": {
-                "p_value": 0.5939941502901619,
+                "p_value": 0.3233235838169365,
                 "result": "Success"
             },
             "Overlapping permutation": {
-                "p_value": 0.4305990755366532,
+                "p_value": 0.4900606626131161,
                 "result": "Success"
             },
             "Binary rank 31 x 31": {
-                "p_value": 0.07636087517906541,
+                "p_value": 0.604541147291733,
                 "result": "Success"
             },
             "Binary rank 6 x 8": {
-                "p_value": 0.1420426444523599,
+                "p_value": 0.613318767393187,
                 "result": "Success"
             },
             "Bitstream": {
-                "p_value": 0.1102582215202203,
+                "p_value": 0.9921768939852703,
                 "result": "Success"
             },
             "OPSO": {
-                "p_value": 0.2789785650969956,
+                "p_value": 0.02975300756006479,
                 "result": "Success"
             },
             "OQSO": {
-                "p_value": 0.1271912701595262,
+                "p_value": 0.6552908707446063,
                 "result": "Success"
             },
             "DNA": {
-                "p_value": 0.1271912701595262,
+                "p_value": 0.6552908707446063,
                 "result": "Success"
             },
             "Count the ones 01": {
-                "p_value": 0.2944705148444431,
+                "p_value": 0.9312746646929616,
                 "result": "Success"
             },
             "Count the ones 02": {
-                "p_value": 0.45331186762354964,
+                "p_value": 0.6518307581132115,
                 "result": "Success"
             },
             "Parking lot": {
-                "p_value": 0.9630496345310042,
+                "p_value": 0.4669591031006973,
                 "result": "Success"
             },
             "Minimum distance": {
-                "p_value": 0.14747638744471758,
+                "p_value": 0.6308836438805792,
                 "result": "Success"
             },
             "3DS spheres": {
-                "p_value": 0.9593126258393775,
+                "p_value": 0.25918063697044824,
                 "result": "Success"
             },
             "Squeeze": {
-                "p_value": 0.2661212179229819,
+                "p_value": 0.13770763920383258,
                 "result": "Success"
             },
             "Overlapping sum": {
-                "p_value": 0.35358396678790915,
+                "p_value": 0.2044222099517974,
                 "result": "Success"
             },
             "Runs": {
-                "p_value": 0.024598150195043644,
+                "p_value": 0.7121142284555673,
                 "result": "Success"
             },
             "CrapsRa": {
-                "p_value": 0.4083806063587464,
+                "p_value": 0.3093902033013891,
+                "result": "Success"
+            }
+        }
+    },
+    {
+        "sequence": "enc_lenna.png",
+        "tests": {
+            "Birthday spacing": {
+                "p_value": 0.3233235838169365,
+                "result": "Success"
+            },
+            "Overlapping permutation": {
+                "p_value": 0.4900606626131161,
+                "result": "Success"
+            },
+            "Binary rank 31 x 31": {
+                "p_value": 0.604541147291733,
+                "result": "Success"
+            },
+            "Binary rank 6 x 8": {
+                "p_value": 0.613318767393187,
+                "result": "Success"
+            },
+            "Bitstream": {
+                "p_value": 0.9921768939852703,
+                "result": "Success"
+            },
+            "OPSO": {
+                "p_value": 0.02975300756006479,
+                "result": "Success"
+            },
+            "OQSO": {
+                "p_value": 0.6552908707446063,
+                "result": "Success"
+            },
+            "DNA": {
+                "p_value": 0.6552908707446063,
+                "result": "Success"
+            },
+            "Count the ones 01": {
+                "p_value": 0.9312746646929616,
+                "result": "Success"
+            },
+            "Count the ones 02": {
+                "p_value": 0.6518307581132115,
+                "result": "Success"
+            },
+            "Parking lot": {
+                "p_value": 0.4891236645532895,
+                "result": "Success"
+            },
+            "Minimum distance": {
+                "p_value": 0.6308836438805792,
+                "result": "Success"
+            },
+            "3DS spheres": {
+                "p_value": 0.25918063697044824,
+                "result": "Success"
+            },
+            "Squeeze": {
+                "p_value": 0.81425878842236,
+                "result": "Success"
+            },
+            "Overlapping sum": {
+                "p_value": 0.2044222099517974,
+                "result": "Success"
+            },
+            "Runs": {
+                "p_value": 0.7121142284555673,
+                "result": "Success"
+            },
+            "CrapsRa": {
+                "p_value": 0.3093902033013891,
                 "result": "Success"
             }
         }

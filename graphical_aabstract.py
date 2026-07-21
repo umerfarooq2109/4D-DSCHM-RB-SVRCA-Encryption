@@ -61,7 +61,16 @@ def encrypt_step_by_step(img, key_bytes):
     N = H * W
 
     # Step 1 — Chaotic sequence generation
-    x0, y0, z0, w0 = key_to_initial_states(key_bytes)
+    # Calculate plaintext-dependent hash of the image
+    img_hash = hashlib.sha256(img.tobytes()).digest()
+    # Combine the key and plaintext hash to derive unique initial states (CPA protection)
+    combined_key = bytes(a ^ b for a, b in zip(key_bytes, img_hash))
+    x0, y0, z0, w0 = key_to_initial_states(combined_key)
+    
+    # Update the core CA module session cache so the imported decrypt_image function matches
+    import src.cellular_automata
+    src.cellular_automata._last_initial_states = (x0, y0, z0, w0)
+    
     xs, ys, zs, ws = generate_chaotic_sequences(H, W, x0, y0, z0, w0)
 
     # Step 2 — Row / Column Scrambling

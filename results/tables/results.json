@@ -1,12 +1,52 @@
 [
     {
-        "filename": "lena_color_512.tif",
+        "filename": "4.2.03.tiff",
         "size": "512 X 512",
-        "npcr": 99.63188171386719,
-        "uaci": 33.44359902774586,
-        "entropy": 7.99937762277031,
+        "npcr": 99.62310791015625,
+        "uaci": 33.40787700578278,
+        "entropy": 7.999306623782118,
         "mse": 0.0,
         "psnr": "inf",
-        "time": "1.593s"
+        "time": "2.744s"
+    },
+    {
+        "filename": "cameraman.jpg",
+        "size": "256 X 256",
+        "npcr": 99.62158203125,
+        "uaci": 33.54831471162684,
+        "entropy": 7.997464539191975,
+        "mse": 0.0,
+        "psnr": "inf",
+        "time": "0.764s"
+    },
+    {
+        "filename": "lena_color_512.tif",
+        "size": "512 X 512",
+        "npcr": 99.62272644042969,
+        "uaci": 33.484009387446385,
+        "entropy": 7.99930276915253,
+        "mse": 0.0,
+        "psnr": "inf",
+        "time": "2.769s"
+    },
+    {
+        "filename": "pepper.tiff",
+        "size": "512 X 512",
+        "npcr": 99.59182739257812,
+        "uaci": 33.44981474034926,
+        "entropy": 7.999290036045957,
+        "mse": 0.0,
+        "psnr": "inf",
+        "time": "2.789s"
+    },
+    {
+        "filename": "pepper.tiff",
+        "size": "512 X 512",
+        "npcr": 99.59182739257812,
+        "uaci": 33.44981474034926,
+        "entropy": 7.999290036045957,
+        "mse": 0.0,
+        "psnr": "inf",
+        "time": "2.782s"
     }
 ]

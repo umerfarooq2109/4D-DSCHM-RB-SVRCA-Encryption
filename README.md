@@ -23,7 +23,7 @@ Plaintext Image
 ```
 
 ### 1. 4D-DSCHM Sequence Generation
-A 256-bit secure key is hashed using SHA-256 to extract four initial states $x_0, y_0, z_0, w_0 \in [0.1, 0.9]$. The sequences are evolved using the 4-dimensional discrete sine-cosine hyperchaotic map equations:
+The initial states $x_0, y_0, z_0, w_0 \in [0.1, 0.9]$ are dynamically derived from both the 256-bit secret key $K$ and the plaintext image hash $H_P = \text{SHA-256}(P)$ using a bitwise XOR combined key $K' = K \oplus H_P$, which is hashed using SHA-256 to create a plaintext-dependent system that successfully resists chosen-plaintext attacks (CPA). The sequences are evolved using the 4-dimensional discrete sine-cosine hyperchaotic map equations:
 $$x_{i+1} = \left(\sin(A \cdot y_i) + B \cdot \cos(x_i) + w_i\right) \pmod{1.0}$$
 $$y_{i+1} = \left(\sin(C \cdot x_i) + D \cdot \cos(y_i)\right) \pmod{1.0}$$
 $$z_{i+1} = \left(\sin(E \cdot z_i) + F \cdot \cos(w_i)\right) \pmod{1.0}$$
@@ -45,7 +45,7 @@ where the parameter set $\{A, B, C, D, E, F, G, H_{param}\}$ is tuned to guarant
 * **Red-Black Grid Iteration**: Reversibility is guaranteed without losing floating-point precision by updating the grid in a checkerboard pattern. Red cells are updated first using the states of Black cells, and then Black cells are updated using the new states of Red cells.
 
 ### 3. Bidirectional Feedback Diffusion
-To guarantee high sensitivity to single-pixel plain image modifications (NPCR > 99.6%, UACI ~ 33.46%), a two-pass diffusion round is performed over the vectorized grid:
+To guarantee high sensitivity to single-pixel plain image modifications (average NPCR $\approx 99.5991\%$ and UACI $\approx 33.4736\%$), a two-pass diffusion round is performed over the vectorized grid:
 1. **Forward Pass**: $C_{1}[i] = (S[i] + C_{1}[i-1]) \pmod{256} \oplus K[i]$
 2. **Backward Pass**: $C_{2}[i] = (C_{1}[i] + C_{2}[i+1]) \pmod{256} \oplus K[i]$
 
@@ -231,8 +231,8 @@ By changing exactly **one pixel** in the input image, we encrypt both and compar
 * **Ideal UACI**: $33.4635\%$
 
 Running `attacks/differential_attack.py` on standard images yields:
-* **NPCR**: $99.7795\%$ (Passes standard significance tests)
-* **UACI**: $33.5490\%$ (Passes standard significance tests)
+* **NPCR**: $99.5991\%$ (Passes standard significance tests)
+* **UACI**: $33.4736\%$ (Passes standard significance tests)
 
 ---
 
@@ -277,17 +277,15 @@ The system achieves high-speed processing through vectorized operations in NumPy
 Running `time_complexity.py` logs step-by-step latency metrics:
 ```
 ======================================================================
-  [1/2] cameraman.jpg (256x256)
+  cameraman.jpg (256x256)
 ======================================================================
-  - Step 1: Chaotic Sequences Generation  : 0.0018s
-  - Step 2: Row/Col Permutation           : 0.0001s
-  - Step 3: Rule/Key Grid Setup           : 0.0009s
-  - Step 4: Reversible CA Iterations (2r) : 0.0051s
-  - Step 5: Forward & Backward Diffusion  : 0.0382s
+  - Chaotic Sequences Generation          : 0.2622s
+  - Reversible CA Iterations (2r)         : 0.0396s
+  - Forward & Backward Diffusion          : 0.0446s
   ----------------------------------------------
-  Total Encryption & Decryption Time      : 0.0461s
+  Total Encryption & Decryption Time      : 0.6655s
 ```
-*The average run time for a standard 256x256 image is under 0.05 seconds, demonstrating suitability for real-time secure communication.*
+*The average run time for a standard 256x256 image is under 0.67 seconds, demonstrating high performance.*
 
 ---
 

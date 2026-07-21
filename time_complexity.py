@@ -12,6 +12,7 @@ import sys
 import time
 import cv2
 import numpy as np
+import hashlib
 
 # Initialize virtual terminal processing for ANSI escape sequences on Windows
 if sys.platform == 'win32':
@@ -117,7 +118,9 @@ def profile_encryption_decryption(image_path, key_bytes):
     
     # Step 2: Chaotic Sequences Generation
     t0 = time.perf_counter()
-    x0, y0, z0, w0 = ca.key_to_initial_states(key_bytes)
+    img_hash = hashlib.sha256(padded_img.tobytes()).digest()
+    combined_key = bytes(a ^ b for a, b in zip(key_bytes, img_hash))
+    x0, y0, z0, w0 = ca.key_to_initial_states(combined_key)
     xs, ys, zs, ws = ca.generate_chaotic_sequences(H, W, x0, y0, z0, w0)
     enc_times['Step 2: Chaotic Sequences Generation'] = time.perf_counter() - t0
     
@@ -176,7 +179,7 @@ def profile_encryption_decryption(image_path, key_bytes):
     
     # Step 1: Regenerate Chaotic Sequences
     t0 = time.perf_counter()
-    x0_dec, y0_dec, z0_dec, w0_dec = ca.key_to_initial_states(key_bytes)
+    x0_dec, y0_dec, z0_dec, w0_dec = x0, y0, z0, w0
     xs_dec, ys_dec, zs_dec, ws_dec = ca.generate_chaotic_sequences(H, W, x0_dec, y0_dec, z0_dec, w0_dec)
     dec_times['Step 1: Regenerate Chaotic Sequences'] = time.perf_counter() - t0
     

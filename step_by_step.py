@@ -51,7 +51,9 @@ def run_step_by_step_4x4():
 
     # 2. Key Derivation and Chaos Generation
     key_bytes = b"Step_By_Step_Key_256_Bits_2026_"
-    h = hashlib.sha256(key_bytes).digest()
+    img_hash = hashlib.sha256(plain.tobytes()).digest()
+    combined_key = bytes(a ^ b for a, b in zip(key_bytes, img_hash))
+    h = hashlib.sha256(combined_key).digest()
     
     # Extract initial states
     chunks = [h[i:i+8] for i in range(0, 32, 8)]

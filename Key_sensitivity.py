@@ -108,7 +108,9 @@ def encrypt_with_perturbed_key(img, key_bytes, var_index, epsilon):
     Encrypt an image after perturbing one initial condition by epsilon.
     Couples x0/y0 perturbation with z0 to propagate the error because x/y is contractive.
     """
-    initials = list(key_to_initial_states(key_bytes))
+    img_hash = hashlib.sha256(img.tobytes()).digest()
+    combined_key = bytes(a ^ b for a, b in zip(key_bytes, img_hash))
+    initials = list(key_to_initial_states(combined_key))
     if var_index in (0, 1):
         initials[var_index] += epsilon
         initials[2] += epsilon
@@ -117,12 +119,18 @@ def encrypt_with_perturbed_key(img, key_bytes, var_index, epsilon):
     return ca.encrypt_image(img, key_bytes, custom_initials=initials)
 
 
-def decrypt_with_perturbed_key(encrypted, key_bytes, original_shape, var_index, epsilon):
+def decrypt_with_perturbed_key(encrypted, key_bytes, original_shape, var_index, epsilon, original_img=None):
     """
     Decrypt an image after perturbing one initial condition during chaotic sequence setup.
     Couples x0/y0 perturbation with z0 to propagate the error because x/y is contractive.
     """
-    initials = list(key_to_initial_states(key_bytes))
+    if original_img is not None:
+        img_hash = hashlib.sha256(original_img.tobytes()).digest()
+        combined_key = bytes(a ^ b for a, b in zip(key_bytes, img_hash))
+        initials = list(key_to_initial_states(combined_key))
+    else:
+        initials = list(key_to_initial_states(key_bytes))
+        
     if var_index in (0, 1):
         initials[var_index] += epsilon
         initials[2] += epsilon
@@ -184,7 +192,8 @@ def test_decryption_sensitivity(encrypted, key_bytes, original, epsilon=1e-15):
     M, N = original.shape
 
     # Correct decryption
-    decrypted_correct = ca.decrypt_image(encrypted, key_bytes, original_shape=(M, N))
+    img_hash = hashlib.sha256(original.tobytes()).digest()
+    decrypted_correct = ca.decrypt_image(encrypted, key_bytes, original_shape=(M, N), img_hash=img_hash)
     if decrypted_correct is None:
         return {'correct_lossless': False, 'results': [], 'decrypted_correct': None}
 
@@ -193,7 +202,7 @@ def test_decryption_sensitivity(encrypted, key_bytes, original, epsilon=1e-15):
     wrong_decryptions = []
 
     for i in range(4):
-        dec_wrong = decrypt_with_perturbed_key(encrypted, key_bytes, (M, N), var_index=i, epsilon=epsilon)
+        dec_wrong = decrypt_with_perturbed_key(encrypted, key_bytes, (M, N), var_index=i, epsilon=epsilon, original_img=original)
 
         if dec_wrong is None:
             results.append({
@@ -552,7 +561,9 @@ def run_key_sensitivity_analysis(image_path):
 
     print(f"Epsilon magnitude: {EPSILON:.0e}")
     print(f"\nOriginal derived initial states:")
-    initial_states = key_to_initial_states(key_bytes)
+    img_hash = hashlib.sha256(original.tobytes()).digest()
+    combined_key = bytes(a ^ b for a, b in zip(key_bytes, img_hash))
+    initial_states = key_to_initial_states(combined_key)
     for i, v in enumerate(initial_states):
         print(f"  {VAR_NAMES[i]} = {v:.16f}")
 

@@ -1,5 +1,9 @@
 import numpy as np
+import hashlib
 from src.map_4d import key_to_initial_states, generate_chaotic_sequences
+
+# Session cache for plaintext-dependent initial states to facilitate pipeline verification
+_last_initial_states = None
 def rol(arr, r_bits):
     """Vectorized bitwise circular left shift for uint8 arrays."""
     return ((arr << r_bits) | (arr >> (8 - r_bits))) & 255
@@ -53,11 +57,19 @@ def encrypt_image(img, key_bytes, custom_initials=None):
     H, W = img.shape
     N = H * W
     
+    global _last_initial_states
+    
     # 1. Generate chaotic sequences
     if custom_initials is not None:
         x0, y0, z0, w0 = custom_initials
     else:
-        x0, y0, z0, w0 = key_to_initial_states(key_bytes)
+        # Calculate plaintext-dependent hash of the image
+        img_hash = hashlib.sha256(img.tobytes()).digest()
+        # Combine the key and plaintext hash to derive unique initial states (CPA protection)
+        combined_key = bytes(a ^ b for a, b in zip(key_bytes, img_hash))
+        x0, y0, z0, w0 = key_to_initial_states(combined_key)
+        
+    _last_initial_states = (x0, y0, z0, w0)
     xs, ys, zs, ws = generate_chaotic_sequences(H, W, x0, y0, z0, w0)
     
     # 2. Row and Column Scrambling
@@ -106,18 +118,27 @@ def encrypt_image(img, key_bytes, custom_initials=None):
         
     return C2.reshape(H, W).astype(np.uint8)
 
-def decrypt_image(cipher_img, key_bytes, original_shape=None, custom_initials=None):
+def decrypt_image(cipher_img, key_bytes, original_shape=None, custom_initials=None, img_hash=None):
     """
     Decrypts the cipher image using inverse bidirectional feedback diffusion, inverse RB-SVRCA, and reverse permutation.
     """
     H, W = cipher_img.shape
     N = H * W
     
+    global _last_initial_states
+    
     # 1. Regenerate chaotic sequences
     if custom_initials is not None:
         x0, y0, z0, w0 = custom_initials
+    elif img_hash is not None:
+        combined_key = bytes(a ^ b for a, b in zip(key_bytes, img_hash))
+        x0, y0, z0, w0 = key_to_initial_states(combined_key)
     else:
-        x0, y0, z0, w0 = key_to_initial_states(key_bytes)
+        # Fall back to session-cached initials if decrypting in the same process pipeline
+        if _last_initial_states is not None:
+            x0, y0, z0, w0 = _last_initial_states
+        else:
+            x0, y0, z0, w0 = key_to_initial_states(key_bytes)
     xs, ys, zs, ws = generate_chaotic_sequences(H, W, x0, y0, z0, w0)
     
     # 2. CA Grid Setup

@@ -1,76 +1,106 @@
 Sequence,Test,p-value,Pass (alpha=0.01)
-enc_lenna.png,Frequency,0.916407,YES
-enc_lenna.png,Block Frequency,0.895976,YES
-enc_lenna.png,Cumulative Sums,0.927575,YES
-enc_lenna.png,Runs,0.765460,YES
-enc_lenna.png,Longest Runs of Ones,0.931506,YES
-enc_lenna.png,Rank,0.047698,YES
-enc_lenna.png,Spectral DFT,0.653689,YES
-enc_lenna.png,Nonperiodic Template Matchings,0.995912,YES
-enc_lenna.png,Overlapping Template Matchings,0.644500,YES
-enc_lenna.png,Universal Statistical,0.218891,YES
-enc_lenna.png,Approximate Entropy,0.145628,YES
-enc_lenna.png,Random Excursions,0.024390,YES
-enc_lenna.png,Random Excursions Variant,0.435208,YES
-enc_lenna.png,Serial,0.765466,YES
-enc_lenna.png,Linear Complexity,0.001020,NO
-enc_Baboon.png,Frequency,0.997796,YES
-enc_Baboon.png,Block Frequency,0.093245,YES
-enc_Baboon.png,Cumulative Sums,0.808276,YES
-enc_Baboon.png,Runs,0.322739,YES
-enc_Baboon.png,Longest Runs of Ones,0.003102,NO
-enc_Baboon.png,Rank,0.074697,YES
-enc_Baboon.png,Spectral DFT,0.990899,YES
-enc_Baboon.png,Nonperiodic Template Matchings,0.254630,YES
-enc_Baboon.png,Overlapping Template Matchings,0.218924,YES
-enc_Baboon.png,Universal Statistical,0.237293,YES
-enc_Baboon.png,Approximate Entropy,0.664231,YES
-enc_Baboon.png,Random Excursions,0.256848,YES
-enc_Baboon.png,Random Excursions Variant,0.073214,YES
-enc_Baboon.png,Serial,0.322739,YES
-enc_Baboon.png,Linear Complexity,0.220997,YES
-enc_Baboon.png,Frequency,0.642620,YES
-enc_Baboon.png,Block Frequency,0.558136,YES
-enc_Baboon.png,Cumulative Sums,0.788841,YES
-enc_Baboon.png,Runs,0.166879,YES
-enc_Baboon.png,Longest Runs of Ones,0.102052,YES
-enc_Baboon.png,Rank,0.174285,YES
-enc_Baboon.png,Spectral DFT,0.323511,YES
-enc_Baboon.png,Nonperiodic Template Matchings,0.773459,YES
-enc_Baboon.png,Overlapping Template Matchings,0.713216,YES
-enc_Baboon.png,Universal Statistical,0.269876,YES
-enc_Baboon.png,Approximate Entropy,0.651279,YES
-enc_Baboon.png,Random Excursions,0.069419,YES
-enc_Baboon.png,Random Excursions Variant,0.205176,YES
-enc_Baboon.png,Serial,0.166410,YES
-enc_Baboon.png,Linear Complexity,0.023890,YES
-enc_lenna.png,Frequency,0.304829,YES
-enc_lenna.png,Block Frequency,0.350816,YES
-enc_lenna.png,Cumulative Sums,0.305343,YES
-enc_lenna.png,Runs,0.698495,YES
-enc_lenna.png,Longest Runs of Ones,0.610481,YES
-enc_lenna.png,Rank,0.231650,YES
-enc_lenna.png,Spectral DFT,0.398637,YES
-enc_lenna.png,Nonperiodic Template Matchings,0.504688,YES
-enc_lenna.png,Overlapping Template Matchings,0.716390,YES
-enc_lenna.png,Universal Statistical,0.752665,YES
-enc_lenna.png,Approximate Entropy,0.775339,YES
-enc_lenna.png,Random Excursions,0.199644,YES
-enc_lenna.png,Random Excursions Variant,0.012358,YES
-enc_lenna.png,Serial,0.547543,YES
-enc_lenna.png,Linear Complexity,0.034422,YES
-enc_lenna.png,Frequency,0.304829,YES
-enc_lenna.png,Block Frequency,0.350816,YES
-enc_lenna.png,Cumulative Sums,0.305343,YES
-enc_lenna.png,Runs,0.698495,YES
-enc_lenna.png,Longest Runs of Ones,0.610481,YES
-enc_lenna.png,Rank,0.231650,YES
-enc_lenna.png,Spectral DFT,0.398637,YES
-enc_lenna.png,Nonperiodic Template Matchings,0.504688,YES
-enc_lenna.png,Overlapping Template Matchings,0.716390,YES
-enc_lenna.png,Universal Statistical,0.752665,YES
-enc_lenna.png,Approximate Entropy,0.775339,YES
-enc_lenna.png,Random Excursions,0.199644,YES
-enc_lenna.png,Random Excursions Variant,0.012358,YES
-enc_lenna.png,Serial,0.547543,YES
-enc_lenna.png,Linear Complexity,0.034422,YES
+enc_4.2.03.png,Frequency,0.424721,YES
+enc_4.2.03.png,Block Frequency,0.898965,YES
+enc_4.2.03.png,Cumulative Sums,0.338280,YES
+enc_4.2.03.png,Runs,0.203721,YES
+enc_4.2.03.png,Longest Runs of Ones,0.784353,YES
+enc_4.2.03.png,Rank,0.393227,YES
+enc_4.2.03.png,Spectral DFT,0.265277,YES
+enc_4.2.03.png,Nonperiodic Template Matchings,0.770989,YES
+enc_4.2.03.png,Overlapping Template Matchings,0.576650,YES
+enc_4.2.03.png,Universal Statistical,0.207056,YES
+enc_4.2.03.png,Approximate Entropy,0.667844,YES
+enc_4.2.03.png,Random Excursions,0.022954,YES
+enc_4.2.03.png,Random Excursions Variant,0.265680,YES
+enc_4.2.03.png,Serial,0.203877,YES
+enc_4.2.03.png,Linear Complexity,0.058166,YES
+enc_cameraman.png,Frequency,0.838042,YES
+enc_cameraman.png,Block Frequency,0.902703,YES
+enc_cameraman.png,Cumulative Sums,0.584515,YES
+enc_cameraman.png,Runs,0.560060,YES
+enc_cameraman.png,Longest Runs of Ones,0.421854,YES
+enc_cameraman.png,Rank,0.315705,YES
+enc_cameraman.png,Spectral DFT,0.575363,YES
+enc_cameraman.png,Nonperiodic Template Matchings,0.390481,YES
+enc_cameraman.png,Overlapping Template Matchings,0.942473,YES
+enc_cameraman.png,Universal Statistical,0.377352,YES
+enc_cameraman.png,Approximate Entropy,0.471759,YES
+enc_cameraman.png,Random Excursions,0.038592,YES
+enc_cameraman.png,Random Excursions Variant,0.076876,YES
+enc_cameraman.png,Serial,0.558163,YES
+enc_cameraman.png,Linear Complexity,0.026229,YES
+enc_lena_color_512.png,Frequency,0.227412,YES
+enc_lena_color_512.png,Block Frequency,0.612413,YES
+enc_lena_color_512.png,Cumulative Sums,0.312131,YES
+enc_lena_color_512.png,Runs,0.093151,YES
+enc_lena_color_512.png,Longest Runs of Ones,0.014221,YES
+enc_lena_color_512.png,Rank,0.497129,YES
+enc_lena_color_512.png,Spectral DFT,0.721746,YES
+enc_lena_color_512.png,Nonperiodic Template Matchings,0.568708,YES
+enc_lena_color_512.png,Overlapping Template Matchings,0.221938,YES
+enc_lena_color_512.png,Universal Statistical,0.681088,YES
+enc_lena_color_512.png,Approximate Entropy,0.296812,YES
+enc_lena_color_512.png,Random Excursions,0.002373,NO
+enc_lena_color_512.png,Random Excursions Variant,0.146305,YES
+enc_lena_color_512.png,Serial,0.093618,YES
+enc_lena_color_512.png,Linear Complexity,0.445327,YES
+enc_pepper.png,Frequency,0.705124,YES
+enc_pepper.png,Block Frequency,0.612678,YES
+enc_pepper.png,Cumulative Sums,0.566901,YES
+enc_pepper.png,Runs,0.050828,YES
+enc_pepper.png,Longest Runs of Ones,0.001124,NO
+enc_pepper.png,Rank,0.571472,YES
+enc_pepper.png,Spectral DFT,0.750404,YES
+enc_pepper.png,Nonperiodic Template Matchings,0.507900,YES
+enc_pepper.png,Overlapping Template Matchings,0.306724,YES
+enc_pepper.png,Universal Statistical,0.138108,YES
+enc_pepper.png,Approximate Entropy,0.115957,YES
+enc_pepper.png,Random Excursions,0.090366,YES
+enc_pepper.png,Random Excursions Variant,0.205173,YES
+enc_pepper.png,Serial,0.050840,YES
+enc_pepper.png,Linear Complexity,0.016584,YES
+enc_cameraman.png,Frequency,0.838042,YES
+enc_cameraman.png,Block Frequency,0.902703,YES
+enc_cameraman.png,Cumulative Sums,0.584515,YES
+enc_cameraman.png,Runs,0.560060,YES
+enc_cameraman.png,Longest Runs of Ones,0.421854,YES
+enc_cameraman.png,Rank,0.315705,YES
+enc_cameraman.png,Spectral DFT,0.575363,YES
+enc_cameraman.png,Nonperiodic Template Matchings,0.390481,YES
+enc_cameraman.png,Overlapping Template Matchings,0.942473,YES
+enc_cameraman.png,Universal Statistical,0.377352,YES
+enc_cameraman.png,Approximate Entropy,0.471759,YES
+enc_cameraman.png,Random Excursions,0.038592,YES
+enc_cameraman.png,Random Excursions Variant,0.076876,YES
+enc_cameraman.png,Serial,0.558163,YES
+enc_cameraman.png,Linear Complexity,0.026229,YES
+enc_lenna.png,Frequency,0.845604,YES
+enc_lenna.png,Block Frequency,0.463127,YES
+enc_lenna.png,Cumulative Sums,0.723904,YES
+enc_lenna.png,Runs,0.274029,YES
+enc_lenna.png,Longest Runs of Ones,0.068515,YES
+enc_lenna.png,Rank,0.633373,YES
+enc_lenna.png,Spectral DFT,0.281934,YES
+enc_lenna.png,Nonperiodic Template Matchings,0.319528,YES
+enc_lenna.png,Overlapping Template Matchings,0.017069,YES
+enc_lenna.png,Universal Statistical,0.979469,YES
+enc_lenna.png,Approximate Entropy,0.549334,YES
+enc_lenna.png,Random Excursions,0.110143,YES
+enc_lenna.png,Random Excursions Variant,0.013512,YES
+enc_lenna.png,Serial,0.274040,YES
+enc_lenna.png,Linear Complexity,0.525249,YES
+enc_lenna.png,Frequency,0.845604,YES
+enc_lenna.png,Block Frequency,0.463127,YES
+enc_lenna.png,Cumulative Sums,0.723904,YES
+enc_lenna.png,Runs,0.274029,YES
+enc_lenna.png,Longest Runs of Ones,0.068515,YES
+enc_lenna.png,Rank,0.633373,YES
+enc_lenna.png,Spectral DFT,0.281934,YES
+enc_lenna.png,Nonperiodic Template Matchings,0.319528,YES
+enc_lenna.png,Overlapping Template Matchings,0.017069,YES
+enc_lenna.png,Universal Statistical,0.979469,YES
+enc_lenna.png,Approximate Entropy,0.549334,YES
+enc_lenna.png,Random Excursions,0.110143,YES
+enc_lenna.png,Random Excursions Variant,0.013512,YES
+enc_lenna.png,Serial,0.274040,YES
+enc_lenna.png,Linear Complexity,0.525249,YES
