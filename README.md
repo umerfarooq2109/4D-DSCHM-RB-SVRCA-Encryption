@@ -304,6 +304,10 @@ The bifurcation diagram plots the visited state space as parameters are varied. 
 
 ---
 
-## 🛡️ License
+## ✉️ Contact & Copyright
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+* **Developer**: Umer Farooq
+* **Email**: [umerfarooqlone2119@gmail.com](mailto:umerfarooqlone2119@gmail.com)
+* **Copyright**: © 2026 Umer Farooq. All rights reserved.
+
+This project is open-source and licensed under the MIT License.
