@@ -173,9 +173,20 @@ The following results demonstrate the system's defenses against standard cryptan
 ### 1. Visual Showcase (Plain, Cipher, and Decrypted Images)
 When an image is encrypted, the visual information is completely scrambled into white noise. The decryption is lossless, restoring the image perfectly.
 
-| Plain Image | Ciphertext Image | Decrypted Image |
-| :---: | :---: | :---: |
-| <img src="Images/cameraman.jpg" width="250" alt="Plain Image"> | <img src="ciphertext.png" width="250" alt="Ciphertext Image"> | <img src="results/decrypted/dec_cameraman.png" width="250" alt="Decrypted Image"> |
+<p align="center">
+  <table>
+    <tr>
+      <th>Plain Image</th>
+      <th>Ciphertext Image</th>
+      <th>Decrypted Image</th>
+    </tr>
+    <tr>
+      <td><img src="./Images/cameraman.jpg" width="250" alt="Plain Image"></td>
+      <td><img src="./ciphertext.png" width="250" alt="Ciphertext Image"></td>
+      <td><img src="./results/decrypted/dec_cameraman.png" width="250" alt="Decrypted Image"></td>
+    </tr>
+  </table>
+</p>
 
 ---
 
