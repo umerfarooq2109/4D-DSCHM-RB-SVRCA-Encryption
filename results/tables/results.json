@@ -1,12 +1,12 @@
 [
     {
-        "filename": "cameraman.jpg",
-        "size": "256 X 256",
-        "npcr": 99.62158203125,
-        "uaci": 33.54831471162684,
-        "entropy": 7.997464539191975,
+        "filename": "lena_color_512.tif",
+        "size": "512 X 512",
+        "npcr": 99.63188171386719,
+        "uaci": 33.44359902774586,
+        "entropy": 7.99937762277031,
         "mse": 0.0,
         "psnr": "inf",
-        "time": "0.419s"
+        "time": "1.593s"
     }
 ]

@@ -1,2 +1,2 @@
 Image,Size,NPCR(%),UACI(%),Entropy,MSE,PSNR,Time
-cameraman.jpg,256 X 256,99.621582,33.548315,7.997465,0.000000,inf,0.419s
+lena_color_512.tif,512 X 512,99.631882,33.443599,7.999378,0.000000,inf,1.593s
