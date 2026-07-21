@@ -181,9 +181,9 @@ When an image is encrypted, the visual information is completely scrambled into 
       <th>Decrypted Image</th>
     </tr>
     <tr>
-      <td><img src="./Images/cameraman.jpg" width="250" alt="Plain Image"></td>
-      <td><img src="./ciphertext.png" width="250" alt="Ciphertext Image"></td>
-      <td><img src="./results/decrypted/dec_cameraman.png" width="250" alt="Decrypted Image"></td>
+      <td><img src="./Images/lenna.jpg" width="250" alt="Plain Image"></td>
+      <td><img src="./results/encrypted/enc_lenna.png" width="250" alt="Ciphertext Image"></td>
+      <td><img src="./results/decrypted/dec_lenna.png" width="250" alt="Decrypted Image"></td>
     </tr>
   </table>
 </p>
