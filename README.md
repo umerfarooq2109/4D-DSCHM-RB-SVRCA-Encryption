@@ -175,7 +175,7 @@ When an image is encrypted, the visual information is completely scrambled into 
 
 | Plain Image | Ciphertext Image | Decrypted Image |
 | :---: | :---: | :---: |
-| ![Plain](Images/cameraman.jpg) | ![Cipher](ciphertext.png) | ![Decrypted](results/decrypted/dec_cameraman.png) |
+| <img src="Images/cameraman.jpg" width="250" alt="Plain Image"> | <img src="ciphertext.png" width="250" alt="Ciphertext Image"> | <img src="results/decrypted/dec_cameraman.png" width="250" alt="Decrypted Image"> |
 
 ---
 
