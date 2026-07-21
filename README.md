@@ -306,6 +306,17 @@ The bifurcation diagram plots the visited state space as parameters are varied. 
 
 ---
 
+## 📂 Data Availability & Benchmark Images
+
+All test images used in this project are standard, publicly available benchmark images commonly used in image processing and cryptography literature:
+1. **USC-SIPI Image Database**: Includes standard color/grayscale images such as *Lena* (512x512, 256x256), *Peppers* (512x512), *Baboon* (512x512), *Aeroplane* (512x512), and miscellaneous textures.
+2. **Standard Test Images**: Grayscale *Cameraman* (256x256), *Black* (solid black synthetic test), and *White* (solid white synthetic test).
+3. **High-Resolution Images**: Large dimension files like *1024.png* and *5.3.02.tiff* (1024x1024).
+
+The complete dataset of images utilized to generate the security metrics in the paper is stored locally in the [`Images/`](Images/) directory of this repository for reproducibility. Users can add their custom test images under the same directory.
+
+---
+
 ## ✉️ Contact & Copyright
 
 * **Developer**: Umer Farooq
