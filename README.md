@@ -300,7 +300,7 @@ Lyapunov exponents measure the rate of separation of infinitesimally close traje
 ### 3. Bifurcation Diagram
 The bifurcation diagram plots the visited state space as parameters are varied. Our 4D-DSCHM displays continuous, dense state-visitation without periodic windows:
 
-| Fig. 2(a): 2D Bifurcation Diagram | Fig. 2(b): 3D Bifurcation Diagram |
+| Fig.(a): Bifurcation Diagram: x vs alpha | Fig. (b): Bifurcation Diagram: y vs alpha |
 | :---: | :---: |
 | ![Bifurcation 2D](results/plots/Fig.2(a).png) | ![Bifurcation 3D](results/plots/Fig.2(b).png) |
 
